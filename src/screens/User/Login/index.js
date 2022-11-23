@@ -53,16 +53,15 @@ return (
         container:{
             flex:1,
 
-        alignItems: "center",
-        justifyContent :"center",
+            alignItems: "center",
+            justifyContent :"center",
 
-
-            },
+        },
         title:{
+
             fontSize:Responsive.font(26),
             color:theme.colors.title,
             fontWeight:"bold"
-        
 
         },
         subTitle:{
@@ -70,12 +69,13 @@ return (
             fontSize:Responsive.font(14),
             color:theme.colors.subtitle,
         
-
         },
         inputTitle:{
+
             fontSize:Responsive.font(14),
             color:theme.colors.primary,
             fontWeight:"bold"
+
         },
         form:{
             
