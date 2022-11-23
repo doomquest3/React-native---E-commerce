@@ -18,13 +18,13 @@ export function Input ({...props}){
 
     const styles = StyleSheet.create({
         container:{
-width: "100%",
-paddingVertical:Responsive.font(18),
-paddingBottom:Responsive.font(2),
-fontSize:Responsive.font(13),
-borderBottomWidth:  Responsive.font(1),
-borderColor: theme.colors.primary,
-marginBottom:Responsive.font(16)
+            width: "100%",
+            paddingVertical:Responsive.font(18),
+            paddingBottom:Responsive.font(2),
+            fontSize:Responsive.font(13),
+            borderBottomWidth:  Responsive.font(1),
+            borderColor: theme.colors.primary,
+            marginBottom:Responsive.font(16)
     
         },
     

@@ -49,47 +49,46 @@ return (
 )
 }
 
-const styles = StyleSheet.create({
-    container:{
-        flex:1,
+    const styles = StyleSheet.create({
+        container:{
+            flex:1,
 
-alignItems: "center",
-justifyContent :"center",
+        alignItems: "center",
+        justifyContent :"center",
 
 
-    },
-title:{
-    fontSize:Responsive.font(26),
-    color:theme.colors.title,
-    fontWeight:"bold"
- 
+            },
+        title:{
+            fontSize:Responsive.font(26),
+            color:theme.colors.title,
+            fontWeight:"bold"
+        
 
-},
-subTitle:{
-    fontSize:Responsive.font(14),
-    color:theme.colors.subtitle,
-   
- 
+        },
+        subTitle:{
 
-},
-inputTitle:{
-    fontSize:Responsive.font(14),
-    color:theme.colors.primary,
-    fontWeight:"bold"
-    ,
-},
-form:{
-    
-    width: "100%",
-    justifyContent :"center",
+            fontSize:Responsive.font(14),
+            color:theme.colors.subtitle,
+        
 
-    padding: Responsive.font(24)
-},
-social:{
-  
-    flexDirection:"row",
-    justifyContent :"space-between",
- 
-}
-}
+        },
+        inputTitle:{
+            fontSize:Responsive.font(14),
+            color:theme.colors.primary,
+            fontWeight:"bold"
+        },
+        form:{
+            
+            width: "100%",
+            justifyContent :"center",
+            padding: Responsive.font(24)
+
+        },
+        social:{
+        
+            flexDirection:"row",
+            justifyContent :"space-between"
+            
+        }
+    }
 )

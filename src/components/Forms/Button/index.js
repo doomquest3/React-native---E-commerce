@@ -19,11 +19,11 @@ export function Button ({title,...props}){
     const styles = StyleSheet.create({
         container:{
             width: "100%",
-backgroundColor:theme.colors.primary,
-padding: Responsive.font(8),
-borderRadius: Responsive.font(5),
-alignItems:"center",
-marginVertical:Responsive.font(16)
+            backgroundColor:theme.colors.primary,
+            padding: Responsive.font(8),
+            borderRadius: Responsive.font(5),
+            alignItems:"center",
+            marginVertical:Responsive.font(16)
 
 
         },
