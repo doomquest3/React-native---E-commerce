@@ -1,18 +1,18 @@
 import React from "react";
 
-import {View, TextInput, StyleSheet} from "react-native";
+import {View, TextInput, StyleSheet,Text} from "react-native";
 import Responsive from 'react-native-lightweight-responsive';
 
-import theme from "../../globals/styles/theme";
+import Theme from "../../globals/styles/theme";
 
 
-const itemPedido = () =>{
+const ItemPedido = () =>{
     return(
         <View style={styles.container}>
             <View style={styles.card}>
-                <text>Pedido #1232132 | Data: dd/mm/aaaa</text>
-                <text>Vendedor: Qualquer nome</text>
-                <text>Valor: R$9,99</text>
+                <Text style={styles.texto_estilo}>Pedido #1232132 | Data: dd/mm/aaaa</Text>
+                <Text style={styles.texto}>Vendedor: Qualquer nome</Text>
+                <Text style={styles.texto_estilo}>Valor: R$9,99</Text>
             </View>
         </View>
     )
@@ -20,17 +20,27 @@ const itemPedido = () =>{
 
 const styles = StyleSheet.create({
     container: {
-        display: flex,
-        flexDirection: column
+        display: "flex",
+        flexDirection: "column",
+        top: 25
     },
     card:{
-        display: flex,
-        flexDirection: column,
+        display: "flex",
+        flexDirection: "column",
         backgroundColor: "#42a5f5",
         color: "#FFFFFF",
-        borderBottomColor: "##DEE2E6"
+        borderBottomColor: "##DEE2E6",
+        textAlign: "center"
+    },
+    texto_estilo:{
+        fontSize: 16
+    },
+    texto:{
+        marginTop: "5%",
+        marginBottom: "5%",
+        fontSize: 16
     }
 
     })
 
-export{itemPedido}
+export{ItemPedido}

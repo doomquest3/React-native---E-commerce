@@ -11,7 +11,7 @@ import { FontAwesome5 } from '@expo/vector-icons';
 
 const Pedidos = () =>{
     return(
-        <View>
+        <View >
             <nav><FontAwesomeIcon icon="fas fa-caret-left" /></nav>
             <itemPedido></itemPedido>
         </View>
