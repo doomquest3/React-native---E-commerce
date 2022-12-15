@@ -9,16 +9,26 @@ import { ProductsScreen } from "./src/screens/Product/ProductsScreen";
 import { AppRoutes } from "./src/routes/routes";
 
 import {NavigationContainer} from "@react-navigation/native";
-import { View, StyleSheet } from "react-native";
+import { View, StyleSheet, Text, SafeAreaView} from "react-native";
+import { AuthProvider } from "./src/Context/auth";
+import { StatusBar } from "expo-status-bar";
 
 
 export default function App() {
   return ( 
-  <ThemeProvider theme={theme}>
-    <NavigationContainer>
-      <AppRoutes/>
-    </NavigationContainer>
-  </ThemeProvider>
+  <SafeAreaView style={styles.safeArea}>
+    <StatusBar barStyle="dark-content"/>
+    <ThemeProvider theme={theme}>
+      <NavigationContainer>
+      <AuthProvider>
+
+        <AppRoutes/>
+
+      </AuthProvider>
+      </NavigationContainer>
+    </ThemeProvider>
+  </SafeAreaView>
+  
   )
 }
 
@@ -27,5 +37,9 @@ const styles = StyleSheet.create({
     display: "flex",
     alignItems: "center",
     justifyContent: "center"
+  },
+  safeArea:{
+    flex: 1,
+    overflow: "hidden"
   }
 })

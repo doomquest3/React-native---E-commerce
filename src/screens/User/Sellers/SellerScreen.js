@@ -4,6 +4,7 @@ import { View, Text, StyleSheet } from "react-native";
 
 
 export function SellerScreen(){
+    
     return(
         <View style={styles.container}>
             <Text>Tela de vendas</Text>
